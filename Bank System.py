@@ -23,8 +23,8 @@ class Bank:
         print(interest)
    
 b1 = Bank()
-b1.deposit(1000)
+b1.deposit(1000) # Balance : 1000
 b1.calculate_interest(datetime.date(2023,10,20),datetime.date(2023,12,20))
-b1.withdrawl(500)
-b1.withdrawl(500)
-b1.withdrawl(100)
+b1.withdrawl(500) # Remaining Balance : 500
+b1.withdrawl(500) # Remaining Balance : 0
+b1.withdrawl(100) # Insufficient Balance
